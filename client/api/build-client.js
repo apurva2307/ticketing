@@ -4,8 +4,7 @@ const buildClient = ({ req }) => {
   if (typeof window === "undefined") {
     // we are on the server and will make request from inside docker container
     return axios.create({
-      baseURL:
-        "http://ingress-nginx-controller.ingress-nginx.svc.cluster.local",
+      baseURL: "http://ticketing.apurvasingh.dev/",
       headers: req.headers,
     });
   } else {
