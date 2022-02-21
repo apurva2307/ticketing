@@ -26,10 +26,3 @@ spec:
                   fieldPath: metadata.name
             - name: REDIS_HOST
               value: expiration-redis-srv
-          resources:
-            limits:
-              memory: 512Mi
-              cpu: "0.3"
-            requests:
-              memory: 256Mi
-              cpu: "0.3"
